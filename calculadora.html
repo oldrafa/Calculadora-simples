@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="texte.css" />
+  </head>
+  <body>
+    <div class="fundo">
+      <div class="calculadora">
+        <h1>CALCULADORA</h1>
+        <p id="resultado"></p>
+        <table>
+          <tr>
+            <td>
+              <!-- BOTAO REINICIAR -->
+              <button value="C" onclick="clean()">C</button>
+            </td>
+            <td>
+              <!-- BOTAO APAGAR -->
+              <button onclick="back()">
+                <img src="./images/backspace.png" alt="" />
+              </button>
+            </td>
+            <td>
+              <!-- BOTAO DIVISAO -->
+              <button onclick="insert('/')">
+                <img src="./images/divisao.png" alt="" />
+              </button>
+            </td>
+            <td>
+              <!-- BOTAO MULTIPLICAÇÃO -->
+              <button onclick="insert('*')">
+                <img src="./images/simbolo-de-multiplicacao.png" alt="" />
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td><button onclick="insert('7')">7</button></td>
+            <td><button onclick="insert('8')">8</button></td>
+            <td><button onclick="insert('9')">9</button></td>
+            <td>
+              <!-- BOTAO MENOS -->
+              <button onclick="insert('-')">
+                <img src="./images/botao-de-simbolo-de-menos.png" alt="" />
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td><button onclick="insert('4')">4</button></td>
+            <td><button onclick="insert('5')">5</button></td>
+            <td><button onclick="insert('6')">6</button></td>
+            <td>
+              <!-- BOTAO ADIÇÃO -->
+              <button onclick="insert('+')">
+                <img
+                  src="./images/simbolo-de-adicao-em-um-quadrado-preto-arredondado.png"
+                  alt=""
+                />
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td><button onclick="insert('1')">1</button></td>
+            <td><button onclick="insert('2')">2</button></td>
+            <td><button onclick="insert('3')">3</button></td>
+            <!-- BOTAO CALCULAR -->
+            <td rowspan="2">
+              <button onclick="calcular()" style="height: 10.6rem">=</button>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <button style="width: 10.6rem" onclick="insert('0')">0</button>
+            </td>
+            <td><button onclick="insert('.')">.</button></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
